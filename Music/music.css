@@ -1,0 +1,104 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.music-player{
+   background-color: rgb(35, 40, 44);
+   width: 400px;
+   padding: 25px 35px;
+   text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+nav .circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    color: rgb(102, 176, 236);
+    box-shadow: o 5px 10px rgb(31, 31, 235,36);
+}
+.song-img{
+    width: 220px;
+    border-radius: 50%;
+    border: 8px solid rgb(240, 227, 227);
+    box-shadow: 0 10px 60px rgba(100, 121, 242, 0.5);
+}
+.music-player h1{
+    
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 0;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+.music-player p{
+    font-size: 18px;
+    margin: 5px 0;
+    color: #a1a1b8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+}
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(53, 53, 63);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+
+}
+#progress::-webkit-slider-thumb{
+
+    -webkit-appearance: none;
+    background: rgb(66, 66, 125);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(121, 95, 95, 0.54);
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:rgb(102, 176, 236) ;
+    box-shadow: o 5px 10px rgb(31, 31, 235,36);
+cursor: pointer;
+}
+.controls div:nth-child(2)
+{
+    transform: scale(1.6);
+    background: rgb(31, 31, 137);
+    color: #fff;
+}
